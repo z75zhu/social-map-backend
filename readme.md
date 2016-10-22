@@ -1,6 +1,6 @@
-Install NPM:
+##Install NPM:
 	$npm install
-Install NodeMon:
+##Install NodeMon:
 	$npm install -g nodemon
-Start the Server:
+##Start the Server:
 	$nodemon
