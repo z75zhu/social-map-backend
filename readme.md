@@ -18,3 +18,4 @@
 		$mongo
 		>use admin
 		>db.shutdownServer()
+		##websocket
