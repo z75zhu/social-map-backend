@@ -9,7 +9,7 @@ router.get('/', function(req, res, next) {
 
 
 router.get('/send', function(req, res) {
-  res.send('hello world');
+  res.send('hello world zihao');
 });
 
 router.post('/send', function (req, res) {
