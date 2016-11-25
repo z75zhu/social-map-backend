@@ -44,6 +44,7 @@ db.once('open', function() {
 
 mongoose.connect('mongodb://localhost:27017/map',function(err){
   if(err){
+    console.log('Database Connection Error:');
     console.log(err);
   }else{
     console.log('Database Connected');
