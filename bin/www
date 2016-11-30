@@ -27,13 +27,16 @@ io.on('connection', function (socket) {
   socket.emit('New User Data', { location: 'give me the location' });
   socket.on('New User', function (data) {
       console.log(data);
-      socket.broadcast.emit('Add Location', { location:data });
+      socket.broadcast.emit('Add Location', { location: 'data' });
   });
   socket.on('Location Change',function(data){
-      socket.broadcast.emit('Change Location', { location:data });
+      socket.broadcast.emit('Change Location', { location: 'data' });
+      console.log('user location changed');
+
   });
   socket.on('disconnect', function () {
-      socket.broadcast.emit('Clear Location', { location:data });
+      socket.broadcast.emit('Clear Location', { location: 'data' });
+      console.log('user disconnected')
   });
 
 });
